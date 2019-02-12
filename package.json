@@ -10,14 +10,20 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.toggleQuickNotes"
+        "onCommand:quicknotes.show"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "extension.toggleQuickNotes",
-                "title": "Toggle Quick Notes"
+                "command": "quicknotes.show",
+                "title": "Show Quick Notes"
+            }
+        ],
+        "keybindings":[
+            {
+                "command": "quicknotes.show",
+                "key": "alt+`"
             }
         ]
     },
