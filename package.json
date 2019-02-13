@@ -9,6 +9,9 @@
     "categories": [
         "Other"
     ],
+    "repository": {
+        "url": "https://github.com/sunliangqin/VSCodeQuickNotes.git"
+    },
     "publisher": "Liangqin",
     "activationEvents": [
         "onCommand:quicknotes.show"
