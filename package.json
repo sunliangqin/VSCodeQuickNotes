@@ -2,7 +2,7 @@
     "name": "quick-notes",
     "displayName": "Quick Notes",
     "description": "",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.31.0"
     },
@@ -20,7 +20,7 @@
                 "title": "Show Quick Notes"
             }
         ],
-        "keybindings":[
+        "keybindings": [
             {
                 "command": "quicknotes.show",
                 "key": "alt+`"
