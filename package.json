@@ -25,7 +25,17 @@
                 "command": "quicknotes.show",
                 "key": "alt+`"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Quick notes configuration",
+            "properties": {
+                "quicknotes.fileName": {
+                    "type": "string",
+                    "default": "notes.txt",
+                    "description": "Quick notes file name."
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
