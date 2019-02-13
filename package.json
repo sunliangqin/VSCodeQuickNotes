@@ -9,6 +9,7 @@
     "categories": [
         "Other"
     ],
+    "publisher": "Liangqin",
     "activationEvents": [
         "onCommand:quicknotes.show"
     ],
