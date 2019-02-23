@@ -1,7 +1,7 @@
 {
     "name": "quick-notes",
     "displayName": "Quick Notes",
-    "description": "",
+    "description": "This extension enables you to take notes in vscode easily.",
     "version": "1.0.2",
     "engines": {
         "vscode": "^1.31.0"
@@ -12,21 +12,21 @@
     "repository": {
         "url": "https://github.com/sunliangqin/VSCodeQuickNotes.git"
     },
-    "publisher": "Liangqin",
+    "publisher": "Liangqin Sun",
     "activationEvents": [
-        "onCommand:quicknotes.show"
+        "onCommand:quicknotes.toggle"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "quicknotes.show",
-                "title": "Show Quick Notes"
+                "command": "quicknotes.toggle",
+                "title": "Toggle Quick Notes"
             }
         ],
         "keybindings": [
             {
-                "command": "quicknotes.show",
+                "command": "quicknotes.toggle",
                 "key": "alt+`"
             }
         ],

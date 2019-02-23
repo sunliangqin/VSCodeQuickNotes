@@ -2,7 +2,7 @@
 
 ## Features
 
-Press alt+` to create a note file (default: notes.txt) in the .vscode folder (if not exists) and to open it in editor.
+Press alt+` to toggle the notes file (default: /.vscode/notes.txt). Notes file will be created if it doesn't exist.
 
 ![Quick Notes Feature](images/quick-notes.gif)
 
