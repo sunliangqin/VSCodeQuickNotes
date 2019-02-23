@@ -12,7 +12,7 @@
     "repository": {
         "url": "https://github.com/sunliangqin/VSCodeQuickNotes.git"
     },
-    "publisher": "Liangqin Sun",
+    "publisher": "Liangqin",
     "activationEvents": [
         "onCommand:quicknotes.toggle"
     ],
