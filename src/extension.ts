@@ -4,7 +4,7 @@ import * as path from 'path';
 export function activate(context: vscode.ExtensionContext) {
     const disposable = vscode.commands.registerCommand('quicknotes.toggle', () => {
         const workspaceFolders = vscode.workspace.workspaceFolders;
-        if (workspaceFolders === undefined || workspaceFolders.length <= 0) {
+        if (workspaceFolders === undefined || workspaceFolders.length === 0) {
             return;
         }
 
@@ -13,19 +13,28 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        const notesFilePath = path.join(workspaceFolders[0].uri.fsPath, '.vscode', notesFileName);
         const activeTextEditor = vscode.window.activeTextEditor;
+        const notesFilePath = path.join(workspaceFolders[0].uri.fsPath, notesFileName);
         if (activeTextEditor === undefined || activeTextEditor.document.fileName !== notesFilePath) {
             const workspaceEdit = new vscode.WorkspaceEdit();
             workspaceEdit.createFile(vscode.Uri.file(notesFilePath), { overwrite: false, ignoreIfExists: true });
-            vscode.workspace.applyEdit(workspaceEdit).then(success => {
+            vscode.workspace.applyEdit(workspaceEdit).then(() => {
                 vscode.workspace.openTextDocument(notesFilePath).then(document => {
                     vscode.window.showTextDocument(document);
                 });
             });
         }
         else {
-            vscode.commands.executeCommand("workbench.action.closeActiveEditor");
+            if (activeTextEditor.document.isDirty) {
+                activeTextEditor.document.save().then(saved => {
+                    if (saved) {
+                        vscode.commands.executeCommand("workbench.action.closeActiveEditor");
+                    }
+                });
+            }
+            else {
+                vscode.commands.executeCommand("workbench.action.closeActiveEditor");
+            }
         }
     });
 
