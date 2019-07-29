@@ -8,4 +8,4 @@ Press alt+` to toggle the notes file. Notes file will be created if it doesn't e
 
 ## Extension Settings
 
-* `quicknotes.fileName`: specify notes file name (default: ./.vscode/notes.txt).
+* `quickNotes.fileName`: specify notes file name (default: ./.vscode/notes.txt).

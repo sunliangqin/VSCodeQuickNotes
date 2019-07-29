@@ -14,26 +14,26 @@
     },
     "publisher": "Liangqin",
     "activationEvents": [
-        "onCommand:quicknotes.toggle"
+        "onCommand:quickNotes.toggle"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "quicknotes.toggle",
+                "command": "quickNotes.toggle",
                 "title": "Toggle Quick Notes"
             }
         ],
         "keybindings": [
             {
-                "command": "quicknotes.toggle",
+                "command": "quickNotes.toggle",
                 "key": "alt+`"
             }
         ],
         "configuration": {
             "title": "Quick Notes",
             "properties": {
-                "quicknotes.fileName": {
+                "quickNotes.fileName": {
                     "type": "string",
                     "default": "./.vscode/notes.txt",
                     "description": "Quick notes file name."
