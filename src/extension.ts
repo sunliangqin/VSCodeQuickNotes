@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
             workspaceEdit.createFile(vscode.Uri.file(notesFilePath), { overwrite: false, ignoreIfExists: true });
             await vscode.workspace.applyEdit(workspaceEdit);
             const document = await vscode.workspace.openTextDocument(notesFilePath);
-            vscode.window.showTextDocument(document);
+            vscode.window.showTextDocument(document, { preview: false });
         }
         else {
             if (activeTextEditor.document.isDirty) {
