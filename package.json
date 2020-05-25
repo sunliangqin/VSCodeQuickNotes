@@ -15,19 +15,19 @@
     },
     "publisher": "Liangqin",
     "activationEvents": [
-        "onCommand:quickNotes.toggle"
+        "onCommand:quick-notes.toggle"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "quickNotes.toggle",
+                "command": "quick-notes.toggle",
                 "title": "Toggle note file"
             }
         ],
         "keybindings": [
             {
-                "command": "quickNotes.toggle",
+                "command": "quick-notes.toggle",
                 "key": "alt+`",
                 "mac": "alt+tab"
             }
