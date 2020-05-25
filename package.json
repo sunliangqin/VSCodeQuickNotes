@@ -22,7 +22,7 @@
         "commands": [
             {
                 "command": "quickNotes.toggle",
-                "title": "Toggle note file"
+                "title": "Toggle Note File"
             }
         ],
         "keybindings": [
