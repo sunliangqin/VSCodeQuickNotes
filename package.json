@@ -31,6 +31,10 @@
                 "command": "quickNotes.toggle",
                 "key": "alt+`",
                 "mac": "alt+tab"
+            },
+            {
+                "command": "quickNotes.toggle",
+                "key": "ctrl+alt+n"
             }
         ],
         "configuration": {
