@@ -2,7 +2,7 @@
     "name": "quick-notes",
     "displayName": "Quick Notes",
     "description": "This extension enables you to take quick notes",
-    "version": "1.8.0",
+    "version": "1.9.0",
     "license": "MIT",
     "engines": {
         "vscode": "^1.50.0"
